@@ -28,11 +28,11 @@ constant PRESSED : std_logic := '1';
 type state_type is (STOPPED, RUNNING);
 signal state, next_state : state_type;
 
-signal counter : unsigned (3 downto 0) := "0000";
+signal counter  : unsigned (3 downto 0) := "0000";
 
-signal start : std_logic := '0';
-signal stop : std_logic := '0';
-signal reset : std_logic := '0';
+signal start    : std_logic := '0';
+signal stop     : std_logic := '0';
+signal reset    : std_logic := '0';
 
 begin
 
